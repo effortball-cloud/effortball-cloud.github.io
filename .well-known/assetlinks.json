@@ -3,6 +3,8 @@
   "target": {
     "namespace": "android_app",
     "package_name": "io.github.effortball_cloud.rookie",
-    "sha256_cert_fingerprints": ["PLAY_APP_SIGNING_SHA256_HERE"]
+    "sha256_cert_fingerprints": [
+      "3B:DA:B6:C5:8B:BD:9B:81:87:B2:CF:4B:90:E7:3C:32:0A:AA:F8:C0:18:D1:BA:00:5B:58:9A:2F:31:0F:86:1E"
+    ]
   }
 }]

@@ -4,7 +4,9 @@ ROOKIE B(루키 비) 안드로이드 앱의 도메인 인증 파일을 두는 �
 
 - `/.well-known/assetlinks.json` — 안드로이드 앱(TWA)과 이 도메인을 묶는 파일.
   구글플레이 콘솔의 **앱 서명 키 SHA-256 지문**이 들어가야 합니다. (업로드 키가 아니라 Play가 관리하는 서명 키)
-- 앱 본체는 [`/rookieb/`](https://effortball-cloud.github.io/rookieb/) 에 있습니다. (2026-10-07 `/rookie-baseball/` 에서 옮김 — 옛 주소는 새 주소로 자동 이동)
+- 앱 본체는 **https://rookieb.com/** 에 있습니다 (2026-10-11 자기 도메인으로 이전, Cloudflare Pages).
+  - `404.html` — `/rookieb/…`·`/rookie-baseball/…` 로 들어오면 그 기기의 기록(rookie.* — 로그인 토큰 제외)을 `#rbmig=` 에 담아 rookieb.com 으로 보냅니다. `rookieb` 저장소를 비공개로 돌리면 `/rookieb/` 주소는 이 404 가 받습니다.
+  - 안드로이드 앱의 도메인 인증 파일은 이제 `rookieb.com/.well-known/assetlinks.json`(원본 `배포/.well-known/`)이 기준입니다. 이 저장소의 같은 파일은 예전 테스트 APK 용으로 남겨 둡니다.
 - 패키지: `io.github.effortball_cloud.rookieb` (2026-10-07부터). 예전 테스트 APK 용 `…rookie` 항목도 당분간 함께 둡니다.
 
 지문이 틀리면 앱 위에 주소창이 뜹니다. 그게 "assetlinks 가 안 맞는다"는 신호입니다.
